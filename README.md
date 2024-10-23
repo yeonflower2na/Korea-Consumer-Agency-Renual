@@ -87,7 +87,7 @@
 | section1 : 메인비주얼                                                                                                      |
 | :---------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="500" alt="핵심키워드"/>
 </div>
 
 <br/>
@@ -96,7 +96,7 @@
 | theme : 다크테마                                                                                                      |
 | :---------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6238014b-f360-4a57-bdbf-8b00c95df491" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/6238014b-f360-4a57-bdbf-8b00c95df491" width="500" alt="핵심키워드"/>
 </div>
 
 <br/>
@@ -105,7 +105,7 @@
 | section2 : 한국소비자원 소개 및 새 소식                              |
 | :------------------------------------------------------------------------------------------------------------------------ |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="500" alt="핵심키워드"/>
 </div>
 
 <br/>
@@ -114,7 +114,7 @@
 | section3 : 공지사항, 보도자료, 카드뉴스, 소비자시대 뉴스                                    |
 | :------------------------------------------------------------------------------------------------------------------------ |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="500" alt="핵심키워드"/>
 </div>
 
 <br/>
@@ -123,7 +123,7 @@
 | section4 : 소비자상담, 소통톡톡, 이벤트 카드뉴스, 배너                                    |
 | :------------------------------------------------------------------------------------------------------------------------ |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="500" alt="핵심키워드"/>
 </div>
 
 <br/>
@@ -132,7 +132,7 @@
 | footer : 한국소비자원 푸터, 사용자별 메뉴                                    |
 | :------------------------------------------------------------------------------------------------------------------------ |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="600" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="500" alt="핵심키워드"/>
 </div>
 
 

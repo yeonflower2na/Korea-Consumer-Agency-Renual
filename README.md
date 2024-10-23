@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="[./images/logo_neon.svg](https://github.com/yeonflower2na/test01/blob/main/header/main-logo.png?raw=true
-)" width="250" alt="keeper logo"/> <br/>
+  [./images/logo_neon.svg](https://github.com/yeonflower2na/test01/blob/main/header/main-logo.png?raw=true
+)
 </div>
 
 # <div align="center">한국소비자원 리뉴얼 디자인</div>

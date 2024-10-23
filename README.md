@@ -29,7 +29,7 @@
 |----------------------|--------------------------------------------------------------------------------------------------|
 | 한국소비자원 본 홈페이지              |  [한국소비자원 본 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                                                    |
 | 리뉴얼 홈페이지              |   [리뉴얼 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                                                |
-| 피그마               | [Figma Link](https://www.figma.com/design/Zl2r28X9vZZIhVNa89r46O/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%A0%95%EC%97%B0%ED%9D%AC?m=auto&t=5evB0MPb8v96hwwd-6)                                  |
+| 피그마               | [피그마 Link](https://www.figma.com/design/Zl2r28X9vZZIhVNa89r46O/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%A0%95%EC%97%B0%ED%9D%AC?m=auto&t=5evB0MPb8v96hwwd-6)                                  |
 
  <br/>
 
@@ -87,7 +87,7 @@
 
 </div>
 
-# 🌐 인프라, CICD 구조
+# 🌐 리뉴얼 방향
 
 <div align="center">
   <img src="./images/Infra.png" width="500" alt="keeper infra structure"/>

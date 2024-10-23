@@ -86,58 +86,18 @@
 ![IntelliJ](https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
 
 </div>
+<br/>
 
 # 🌐 리뉴얼 방향
 
 <div align="center">
-  <img src="./images/Infra.png" width="500" alt="keeper infra structure"/>
-  <img src="./images/CICD.png" width="500" alt="keeper cicd structure"/>
+  <img src="https://github.com/user-attachments/assets/1922af99-1f68-4021-a573-47cb13320d51" width="800" alt="keeper infra structure"/>
 </div>
 
-# 🐬 ERD
+# ⚡️ 핵심 키워드
 
 <div align="center">
   <img src="./images/ERD.png" width="600" alt="keeper db erd"/>
 </div>
-
-# ⚡️ 퀵 스타트 가이드
-
-아래의 절차를 통해 로컬에서 키퍼 홈페이지를 띄워 보실 수 있습니다.
-
-### STEP 1) 프로젝트 클론
-
-```
-git clone https://github.com/02ggang9/Keeper_start_guide.git
-```
-
-### STEP 2) .env 파일 생성
-
-quick_start > build > .env 파일 생성 (env.example 파일 참고)
-
-### STEP 3) mail 환경 변수 설정
-
-quick_start > build > docker > data > application.yml 파일 이동 후 mail 환경 변수 설정
-
-### STEP 4) 쉘 스크립트 실행
-
-MAC 환경
-
-```
-sh ./run_keeper.sh
-```
-
-Ubuntu 환경
-
-```
-sudo ./run_keeper.sh
-```
-
-### STEP 5) 접속
-
-```
-localhost:8080
-```
-
-# 🧑🏻‍💻 코드 유지 관리자
 
 

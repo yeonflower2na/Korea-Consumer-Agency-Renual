@@ -2,7 +2,7 @@
   <img src="./images/logo_neon.svg" width="250" alt="keeper logo"/> <br/>
 </div>
 
-# <div align="center">Homepage-Back-R2</div>
+# <div align="center">한국소비자원 리뉴얼 디자인</div>
 
 KEEPER 홈페이지 백엔드 서버입니다.
 

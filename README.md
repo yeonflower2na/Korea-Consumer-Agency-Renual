@@ -55,49 +55,77 @@
 
 <div align="center">
 
-**Language**
-
-![Jdk 17](https://img.shields.io/badge/-Jdk%2017-437291?style=for-the-badge&logo=openjdk&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-8D6748?style=for-the-badge)
-![Kotlin](https://img.shields.io/badge/-kotlin-7F52FF?style=for-the-badge)
-
-**Dependancy**
-
-![Spring Boot 3.0.2](https://img.shields.io/badge/Spring%20boot%203.0.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Spring Rest Docs](https://img.shields.io/badge/Spring%20rest%20docs-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Data Jpa](https://img.shields.io/badge/Spring%20data%20jpa-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-
-![Lombok](https://img.shields.io/badge/Lombok-be2e22?style=for-the-badge&logo=lombok&logoColor=white)
-![Jwt](https://img.shields.io/badge/Jwt-181717?style=for-the-badge&logo=jwt&logoColor=white)
-![p6spy](https://img.shields.io/badge/p6spy-97979A?style=for-the-badge&logo=p6spy&logoColor=white)
-![Kotest](https://img.shields.io/badge/Kotest-7F52FF?style=for-the-badge&logo=kotest&logoColor=white)
-![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Mockito](https://img.shields.io/badge/-Mockito-6DB33F?style=for-the-badge)
-
-**Database**
-
-![Mysql 8.0](https://img.shields.io/badge/MySQL%208.0-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=Redis&logoColor=white)
-
-**Tool**
-
-![Gradle](https://img.shields.io/badge/Gradle%207.6-02303A?style=for-the-badge&logo=gradle&logoColor=white)
-![IntelliJ](https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
-
+<br>
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white">
+          <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white">
+          <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=Prettier&logoColor=white">
+          <img src="https://img.shields.io/badge/Github-181717?style=flat&logo=Github&logoColor=white">
+          <br/><img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white">
+          <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white">
 </div>
-<br/>
+<br>
 
 # 🌐 리뉴얼 방향
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/1922af99-1f68-4021-a573-47cb13320d51" width="800" alt="keeper infra structure"/>
+  <img src="https://github.com/user-attachments/assets/1922af99-1f68-4021-a573-47cb13320d51" width="800" alt="리뉴얼 방향"/>
 </div>
 
 # ⚡️ 핵심 키워드
 
 <div align="center">
-  <img src="./images/ERD.png" width="600" alt="keeper db erd"/>
+  <img src="https://github.com/user-attachments/assets/92c9dd43-7713-4ccb-aff7-09b67c07cffd" width="600" alt="핵심키워드"/>
 </div>
 
 
+<br/>
+
+## 👀 페이지 구성
+
+### 📚 메인 페이지
+
+| section1 : 메인비주얼                                                                                                      |
+| :---------------------------------------------------------------------------------------------------------------------- |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="600" alt="핵심키워드"/>
+</div>
+
+<br/>
+<br/>
+
+| section2 : 한국소비자원 소개 및 새 소식                              |
+| :------------------------------------------------------------------------------------------------------------------------ |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="600" alt="핵심키워드"/>
+</div>
+
+<br/>
+<br/>
+
+| section3 : 공지사항, 보도자료, 카드뉴스, 소비자시대 뉴스                                    |
+| :------------------------------------------------------------------------------------------------------------------------ |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="600" alt="핵심키워드"/>
+</div>
+
+<br/>
+<br/>
+
+| section4 : 소비자상담, 소통톡톡, 이벤트 카드뉴스, 배너                                    |
+| :------------------------------------------------------------------------------------------------------------------------ |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="600" alt="핵심키워드"/>
+</div>
+
+<br/>
+<br/>
+
+| footer : 한국소비자원 푸터, 사용자별 메뉴                                    |
+| :------------------------------------------------------------------------------------------------------------------------ |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="600" alt="핵심키워드"/>
+</div>
+
+
+<br/>
+<br/>

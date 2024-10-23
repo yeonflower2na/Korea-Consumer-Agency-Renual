@@ -1,50 +1,55 @@
-<div align="center">
-  [./images/logo_neon.svg](https://github.com/yeonflower2na/test01/blob/main/header/main-logo.png?raw=true
-)
+![image](https://github.com/user-attachments/assets/a8ce817f-90d9-45a2-aaab-a37d41c53a8c)<div align="center">
+  <img src="https://github.com/user-attachments/assets/02a2a635-947d-4fa4-930a-8c3ea8b8d89b" width="170" alt="keeper logo"/> <br/>
 </div>
 
 # <div align="center">한국소비자원 리뉴얼 디자인</div>
 
-KEEPER 홈페이지 백엔드 서버입니다.
 
-## ⭐️ 리뉴얼 프로젝트가 지향하는 바
+### 한국소비자원(Korea Consumer Agency) 은 
+1987년 설립 이래 소비자 권익 보호와 공정한 거래 환경 조성을 목표로 활동해 온 소비자 보호 기관입니다.  <br/>
+피해 구제와 안전한 소비 환경 제공을 통해 신뢰와 공정성을 바탕으로 소비자의 든든한 보호막 역할을 하고 있습니다.  <br/>
+교육과 정보 제공을 통해 소비자가 자신의 권리를 적극적으로 행사할 수 있도록 돕고 있으며,  <br/>
+글로벌 시장에서도 소비자 권익을 지키기 위해 국제적 협력을 강화하고 있습니다. <br/>
+ <br/>
+ 
 
-- 언제나 후임자가 **유지보수하기 좋은 설계 방향**을 고민합니다.
-- 캡슐화, 코드 재사용성, 테스트 용이성을 위해 비즈니스 로직을 도메인에 위치시킵니다.
-- RESTful API 규칙에 따라 RESTful한 API를 설계하고자 합니다.
-- 코드 컨벤션을 정하여 클린 코드를 작성합니다.
-- 꼼꼼한 코드 리뷰를 통해 코드의 품질을 높이고, 서로의 작업물을 이해합니다.
-- Controller, Service, Repoistory Layer에 대해 테스트 코드를 작성하여 사전에 버그를 방지합니다.
+## ⭐️ 한국소비자원 문제점 분석
+
+- **복잡한 메뉴 구조** “사이트를 볼 때 정보가 많아 한눈에 안들어와요” <br/>
+- **웹 접근성** “색깔 구분이 어렵고 글씨가 잘 안보여요” <br/>
+- **일관성** “디자인이 페이지마다 달라서 어디가 어딘지 헷갈려요” <br/>
+- **비주얼 아이덴티티** “어떤 홈페이지인지 잘 안느껴져요” <br/>
+- **검색기능 비효율성** “사이트에서 바로 검색하고 싶은데 잘 안보여요” <br/>
+ <br/>
+
 
 # 📝 링크
 
-| 이름                   | 링크                                                                                                               |
-|----------------------|------------------------------------------------------------------------------------------------------------------|
-| 운영 홈페이지              | [keeper.or.kr](https://keeper.or.kr)                                                                             |
-| 개발 홈페이지              | [dev.keeper.or.kr](https://dev.keeper.or.kr)                                                                     |
-| 피그마               | [api.keeper.or.kr/docs/keeper.html](https://api.keeper.or.kr/docs/keeper.html)                                   |
-| Notion               | [Notion Link](https://chip-force-ed0.notion.site/KEEPER-0dbccc3c2374465b8be715cd9d872103?pvs=4)                  |
+| 이름                            | 링크                                                                                               |
+|----------------------|--------------------------------------------------------------------------------------------------|
+| 한국소비자원 본 홈페이지              |  [한국소비자원 본 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                                                    |
+| 리뉴얼 홈페이지              |   [리뉴얼 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                                                |
+| 피그마               | [Figma Link](https://www.figma.com/design/Zl2r28X9vZZIhVNa89r46O/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%A0%95%EC%97%B0%ED%9D%AC?m=auto&t=5evB0MPb8v96hwwd-6)                                  |
 
+ <br/>
 
 # ✨ 도메인
 
 ```
-📦 domain
- ┣ 📂 about       // 메인 소개
- ┣ 📂 attendance  // 홈페이지 출석
- ┣ 📂 auth        // 로그인, 회원가입
- ┣ 📂 comment     // 댓글
- ┣ 📂 file        // 파일
- ┣ 📂 game        // 게임
- ┣ 📂 library     // 도서 대출, 관리
- ┣ 📂 member      // 회원 정보 관리
- ┣ 📂 merit       // 상벌점 부여, 관리
- ┣ 📂 point       // 포인트 부여, 관리
- ┣ 📂 post        // 게시글
- ┣ 📂 seminar     // 세미나 출석, 관리
- ┣ 📂 study       // 스터디
- ┗ 📂 thumbnail   // 썸네일
+📦 #한국소비자원
+ ┣ 📂 css       // CSS 파일
+ ┣ 📂 js  // JavaScript 파일
+ ┣ 📂 body 
+ ┣ 📂 header
+ ┣ 📂 section1 
+ ┣ 📂 section2
+ ┣ 📂 section3
+ ┣ 📂 section4
+ ┣ 📂 footer
+ ┗ 📂 mobile   // MediaQuery
 ```
+
+ <br/>
 
 # 🛠️ 기술 스택
 

@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a8ce817f-90d9-45a2-aaab-a37d41c53a8c)<div align="center">
+<div align="center">
   <img src="https://github.com/user-attachments/assets/02a2a635-947d-4fa4-930a-8c3ea8b8d89b" width="170" alt="keeper logo"/> <br/>
 </div>
 

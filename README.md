@@ -55,7 +55,8 @@
 
 <div align="center">
           <img src="https://github.com/user-attachments/assets/50c93cdc-e886-473f-8efb-d9d5846b5105">
-<br>
+ <br/>
+<br/>
           <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white">
           <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white">
           <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=Prettier&logoColor=white">
@@ -64,6 +65,7 @@
           <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white">
 </div>
 <br>
+ <br/>
 
 # 🌐 리뉴얼 방향
 

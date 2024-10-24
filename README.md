@@ -74,12 +74,10 @@
 
 # 🛠️ 개발 환경
 
-<div align="left">
-- 개발 환경 : <img src="https://img.shields.io/badge/windows10-0078D6?style=flat-square&logo=windows10&logoColor=white"/> <br><br>
-- 사용 프로그램 : <img src="https://img.shields.io/badge/Vs code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/><br><br>
-- 사용된 기술 :
+- **개발 환경** : <img src="https://img.shields.io/badge/windows10-0078D6?style=flat-square&logo=windows10&logoColor=white"/> <br><br>
+- **사용 프로그램** : <img src="https://img.shields.io/badge/Vs code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/><br><br>
+- **사용된 기술** :
   <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white">
-</div>
 <br>
  <br/>
 
@@ -112,9 +110,10 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
   <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="500" alt="메인 비주얼"/>
-</div>
+</div><br>
+
 <div align="center">
-- 메인 비주얼 섹션은 한국소비자원의 주요 서비스를 한눈에 보여주는 와이드형 배너와 슬라이더로 구성되어 있습니다. <br/>
+메인 비주얼 섹션은 한국소비자원의 주요 서비스를 한눈에 보여주는 와이드형 배너와 슬라이더로 구성되어 있습니다. <br/>
 반응형 디자인을 통해 다양한 디바이스에서도 원활하게 작동하며,  **사이트맵**을 통해 사이트 전체 구조를 파악할 수 있습니다. <br/>
 </div>
 
@@ -125,9 +124,10 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="500" alt="한국소비자원 소개"/>
-</div>
+</div><br>
 <div align="center">
-- 한국소비자원의 소개와 최신 뉴스를 포함한 섹션입니다. <br/>
+  
+한국소비자원의 소개와 최신 뉴스를 포함한 섹션입니다. <br/>
 사용자는 이 섹션에서 기관의 주요 활동을 쉽게 이해할 수 있으며, 최신 정보와 정책을 확인할 수 있습니다. <br/>
   </div>
 <br/>
@@ -137,9 +137,13 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
   <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="500" alt="공지사항 및 카드뉴스"/>
-</div>
-- 공지사항, 보도자료, 카드뉴스 등을 제공하는 섹션으로, 다양한 소식을 한눈에 볼 수 있도록 **슬라이더** 기능을 활용했습니다. <br/>
+</div><br>
+
+<div align="center">
+  
+공지사항, 보도자료, 카드뉴스 등을 제공하는 섹션으로, 다양한 소식을 한눈에 볼 수 있도록 **슬라이더** 기능을 활용했습니다. <br/>
 중요한 공지와 뉴스를 빠르게 전달할 수 있습니다.
+</div>
 <br>
 <br>
 
@@ -147,9 +151,11 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
   <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="500" alt="소비자 상담 및 이벤트 배너"/>
-</div>
+</div><br>
+
 <div align="center">
-- 소비자 상담 및 이벤트 관련 정보를 제공하는 섹션으로, 주요 서비스에 쉽게 접근할 수 있도록 배너와 링크가 배치되어 있습니다. <br/>
+  
+소비자 상담 및 이벤트 관련 정보를 제공하는 섹션으로, 주요 서비스에 쉽게 접근할 수 있도록 배너와 링크가 배치되어 있습니다. <br/>
 **상담 버튼**과 **이벤트 배너**를 통해 사용자에게 편리한 경험을 제공합니다. <br/>
 </div>
 <br>
@@ -159,10 +165,26 @@
 | :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="500" alt="푸터"/>
-</div>
+</div><br>
+
 <div align="center">
-- 푸터 영역에서는 주요 사이트 링크와 사용자를 위한 정보가 제공됩니다. <br/>
+  
+푸터 영역에서는 주요 사이트 링크와 사용자를 위한 정보가 제공됩니다. <br/>
 각 사용자는 사용자별 메뉴를 이용하여 자신에게 맞는 메뉴에 쉽게 접근할 수 있습니다. <br/>
+</div>
+<br>
+<br>
+
+
+| **theme : 다크 테마**                                                                                                      |
+| :---------------------------------------------------------------------------------------------------------------------- |
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6238014b-f360-4a57-bdbf-8b00c95df491" width="500" alt="다크 테마"/>
+</div><br>
+
+<div align="center">
+
+**다크 테마**는 시각적 피로를 줄이고, 사용자에게 더 나은 가독성을 제공하기 위해 적용되었습니다. 특히, 저조도 환경에서 웹사이트를 사용하는 사용자에게 최적화된 경험을 제공합니다. 배경색과 텍스트의 명확한 대비를 통해 **웹 접근성**을 개선하며, 디자인 일관성을 유지하면서 현대적인 느낌을 줍니다. 다크 테마는 **반응형 디자인**이 적용되어 다양한 디바이스 환경에서 동일한 시각적 경험을 제공합니다.
 </div>
 
 <br>

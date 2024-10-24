@@ -113,8 +113,10 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="500" alt="메인 비주얼"/>
 </div>
+<div align="center">
 - 메인 비주얼 섹션은 한국소비자원의 주요 서비스를 한눈에 보여주는 와이드형 배너와 슬라이더로 구성되어 있습니다. <br/>
 반응형 디자인을 통해 다양한 디바이스에서도 원활하게 작동하며,  **사이트맵**을 통해 사이트 전체 구조를 파악할 수 있습니다. <br/>
+</div>
 
 <br>
 <br>
@@ -124,8 +126,10 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="500" alt="한국소비자원 소개"/>
 </div>
+<div align="center">
 - 한국소비자원의 소개와 최신 뉴스를 포함한 섹션입니다. <br/>
 사용자는 이 섹션에서 기관의 주요 활동을 쉽게 이해할 수 있으며, 최신 정보와 정책을 확인할 수 있습니다. <br/>
+  </div>
 <br/>
 <br/>
 
@@ -144,8 +148,10 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="500" alt="소비자 상담 및 이벤트 배너"/>
 </div>
+<div align="center">
 - 소비자 상담 및 이벤트 관련 정보를 제공하는 섹션으로, 주요 서비스에 쉽게 접근할 수 있도록 배너와 링크가 배치되어 있습니다. <br/>
 **상담 버튼**과 **이벤트 배너**를 통해 사용자에게 편리한 경험을 제공합니다. <br/>
+</div>
 <br>
 <br>
 
@@ -154,8 +160,10 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="500" alt="푸터"/>
 </div>
+<div align="center">
 - 푸터 영역에서는 주요 사이트 링크와 사용자를 위한 정보가 제공됩니다. <br/>
 각 사용자는 사용자별 메뉴를 이용하여 자신에게 맞는 메뉴에 쉽게 접근할 수 있습니다. <br/>
+</div>
 
 <br>
 <br>

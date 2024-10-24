@@ -3,35 +3,55 @@
 </div>
 
 # <div align="center">한국소비자원 리뉴얼 디자인</div>
-
-
-### 한국소비자원(Korea Consumer Agency) 은 
-1987년 설립 이래 소비자 권익 보호와 공정한 거래 환경 조성을 목표로 활동해 온 소비자 보호 기관입니다.  <br/>
-피해 구제와 안전한 소비 환경 제공을 통해 신뢰와 공정성을 바탕으로 소비자의 든든한 보호막 역할을 하고 있습니다.  <br/>
-교육과 정보 제공을 통해 소비자가 자신의 권리를 적극적으로 행사할 수 있도록 돕고 있으며,  <br/>
-글로벌 시장에서도 소비자 권익을 지키기 위해 국제적 협력을 강화하고 있습니다. <br/>
- <br/>
- 
-
-## ⭐️ 한국소비자원 문제점 분석
-
-- **복잡한 메뉴 구조** “사이트를 볼 때 정보가 많아 한눈에 안들어와요” <br/>
-- **웹 접근성** “색깔 구분이 어렵고 글씨가 잘 안보여요” <br/>
-- **일관성** “디자인이 페이지마다 달라서 어디가 어딘지 헷갈려요” <br/>
-- **비주얼 아이덴티티** “어떤 홈페이지인지 잘 안느껴져요” <br/>
-- **검색기능 비효율성** “사이트에서 바로 검색하고 싶은데 잘 안보여요” <br/>
  <br/>
 
+### 한국소비자원(Korea Consumer Agency)은 
+1987년 설립 이래 소비자 권익 보호와 공정한 거래 환경 조성을 목표로 활동해 온 소비자 보호 기관입니다. <br/>
+피해 구제와 안전한 소비 환경 제공을 통해 신뢰와 공정성을 바탕으로 소비자의 든든한 보호막 역할을 하고 있습니다. <br/>
+교육과 정보 제공을 통해 소비자가 자신의 권리를 적극적으로 행사할 수 있도록 돕고 있으며, 글로벌 시장에서도 소비자 권익을 지키기 위해 국제적 협력을 강화하고 있습니다. <br/>
+<br>
+<br>
 
-# 📝 링크
+## ⭐️ 리뉴얼 프로젝트 설명
 
-| 이름                            | 링크                                                                                               |
-|----------------------|--------------------------------------------------------------------------------------------------|
-| 한국소비자원 본 홈페이지              |  [한국소비자원 본 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                                                    |
-| 리뉴얼 홈페이지              |   [리뉴얼 홈페이지 Link](https://yeonflower2na.github.io/test01/)                                                                |
-| 피그마               | [피그마 Link](https://www.figma.com/design/Zl2r28X9vZZIhVNa89r46O/%EA%B3%B5%EA%B3%B5%EA%B8%B0%EA%B4%80-%EB%A6%AC%EB%89%B4%EC%96%BC_%EC%A0%95%EC%97%B0%ED%9D%AC?m=auto&t=5evB0MPb8v96hwwd-6)                                  |
+본 프로젝트는 **한국소비자원** 웹사이트의 전면 리뉴얼을 목표로 하며, <br/>
+사용자 경험(UX)과 디자인 개선을 통해 정보 접근성, 편의성, 웹 접근성을 강화하는 데 중점을 두었습니다. 
+<br/>
 
+### 📅 제작 기간
+
+- **기획 단계**: 3일 (2024년 8월 5일 ~ 2024년 8월 8일)  
+  리뉴얼을 위한 전반적인 전략을 수립하고, 사용자의 요구사항과 문제점을 분석하여 기획을 완료했습니다.
+
+- **디자인 단계**: 11일 (2024년 8월 19일 ~ 2024년 9월 30일)  
+  사용성(UX)을 고려한 직관적이고 현대적인 디자인을 적용하여, 다양한 디바이스에서도 최적의 경험을 제공할 수 있도록 디자인을 진행했습니다.
+
+- **개발 단계**: 24일 (2024년 10월 1일 ~ 2024년 10월 25일)  
+  기획과 디자인을 바탕으로 웹사이트를 실제로 개발하며, 메인 페이지와 서브 페이지의 각 기능을 구현했습니다. <br/>
+  **웹 접근성 표준**을 준수하고, 반응형 웹 개발을 통해 다양한 화면 크기에서도 일관된 경험을 제공하는 데 중점을 두었습니다.
  <br/>
+
+## 📂 프로젝트 구성
+### 메인 페이지 
+<br/>
+- **대표 기능**: 메인 페이지에서는 한국소비자원의 주요 서비스를 한눈에 볼 수 있도록 **주요 공지사항 슬라이더**, **서비스 배너**, **공지사항 팝업** 기능이 구현되었습니다.<br/>
+- 이 슬라이더는 최신 뉴스 및 공지사항을 자동으로 스크롤하여 보여주며, 사용자가 빠르게 정보를 확인할 수 있습니다.<br/><br/>
+
+- **사용자 인터페이스**: **웹 접근성**을 고려한 직관적인 사용자 인터페이스를 제공하며, **검색창**과 **상단 메뉴**는 명확하게 배치되어 사용자가 쉽게 네비게이션 할 수 있도록 설계되었습니다.<br/>
+- 주요 메뉴는 사용자 경험(UX)을 최적화하기 위해 심플하게 구성되었으며, 반응형 디자인을 적용하여 모바일 환경에서도 동일한 경험을 제공합니다.<br/><br/>
+
+- **검색 및 네비게이션 기능**: **통합 검색 기능**을 통해 사용자는 필요한 정보를 빠르게 찾을 수 있으며, 검색 결과는 사용자가 가장 많이 찾는 정보부터 우선적으로 표시됩니다.<br/>
+- 또한, **네비게이션 메뉴**는 카테고리별로 정리되어 있어 사용자가 원하는 서비스를 쉽게 탐색할 수 있도록 돕습니다.<br/><br/>
+
+<br/>
+### 서브 페이지 기능
+<br/>
+- **세부 내용 제공**: 서브 페이지에서는 **소비자 피해 구제 절차**, **정책 자료**, **소비자 안전 관련 정보**를 구체적으로 제공합니다.<br/>
+각 페이지는 정보를 명확하게 전달하기 위해 간결한 텍스트와 관련 문서 다운로드 링크를 포함하고 있으며, **FAQ**(자주 묻는 질문)를 통해 사용자들이 자주 찾는 정보를 빠르게 확인할 수 있습니다.<br/><br/>
+
+- **카테고리 별 페이지**: 서브 페이지는 **소비자 피해 구제**, **정책 자료** 등의 카테고리별로 나뉘어 있어 각 부서의 주요 업무와 관련된 자료를 제공합니다.<br/>
+사용자는 **로그인 기능**을 통해 개인 맞춤형 정보를 확인할 수 있으며, **문서 다운로드** 기능을 통해 필요한 파일을 쉽게 받을 수 있습니다. 이를 통해 효율적인 정보 탐색과 접근을 가능하게 했습니다.<br/><br/>
+
 
 # ✨ 도메인
 
@@ -46,23 +66,19 @@
  ┣ 📂 section3
  ┣ 📂 section4
  ┣ 📂 footer
- ┗ 📂 mobile   // MediaQuery
+ ┣ 📂 mobile   // MediaQuery
+ ┗ 📂 notice   // SubPage
 ```
 
  <br/>
 
-# 🛠️ 기술 스택
+# 🛠️ 개발 환경
 
-<div align="center">
-          <img src="https://github.com/user-attachments/assets/50c93cdc-e886-473f-8efb-d9d5846b5105">
- <br/>
-<br/>
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white">
-          <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white">
-          <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=Prettier&logoColor=white">
-          <img src="https://img.shields.io/badge/Github-181717?style=flat&logo=Github&logoColor=white">
-          <br/><img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white">
-          <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white">
+<div align="left">
+- 개발 환경 : <img src="https://img.shields.io/badge/windows10-0078D6?style=flat-square&logo=windows10&logoColor=white"/> <br><br>
+- 사용 프로그램 : <img src="https://img.shields.io/badge/Vs code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/> <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/><br><br>
+- 사용된 기술 :
+  <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white">
 </div>
 <br>
  <br/>
@@ -73,6 +89,12 @@
   <img src="https://github.com/user-attachments/assets/1922af99-1f68-4021-a573-47cb13320d51" width="800" alt="리뉴얼 방향"/>
 </div>
 
+- **디자인 일관성 강화**: 메인과 서브 페이지에서 일관된 디자인 시스템을 적용하여 시각적 정체성을 강화.
+- **웹 접근성 개선**: 대비가 높은 색상 및 명확한 폰트를 사용해 가독성을 높이고, 다양한 사용자의 요구에 맞는 웹 접근성을 제공.
+- **메뉴 구조 단순화**: 주요 기능과 정보를 직관적으로 배치하여 사용자가 원하는 정보에 쉽게 접근할 수 있도록 개선.
+<br/>
+<br/>
+
 # ⚡️ 핵심 키워드
 
 <div align="center">
@@ -82,61 +104,68 @@
 
 <br/>
 
-## 👀 페이지 구성
+# 👀 페이지 구성
 
 ### 📚 메인 페이지
 
-| section1 : 메인비주얼                                                                                                      |
-| :---------------------------------------------------------------------------------------------------------------------- |
+| **Section 1 : 메인 비주얼**                                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="500" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/52060b59-b694-4e78-a596-57a7c95b24c8" width="500" alt="메인 비주얼"/>
 </div>
+- 메인 비주얼 섹션은 한국소비자원의 주요 서비스를 한눈에 보여주는 와이드형 배너와 슬라이더로 구성되어 있습니다. <br/>
+반응형 디자인을 통해 다양한 디바이스에서도 원활하게 작동하며,  **사이트맵**을 통해 사이트 전체 구조를 파악할 수 있습니다. <br/>
 
-<br/>
-<br/>
+<br>
+<br>
 
-| theme : 다크테마                                                                                                      |
-| :---------------------------------------------------------------------------------------------------------------------- |
+| **Section 2 : 한국소비자원 소개 및 뉴스**                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6238014b-f360-4a57-bdbf-8b00c95df491" width="500" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="500" alt="한국소비자원 소개"/>
 </div>
-
+- 한국소비자원의 소개와 최신 뉴스를 포함한 섹션입니다. <br/>
+사용자는 이 섹션에서 기관의 주요 활동을 쉽게 이해할 수 있으며, 최신 정보와 정책을 확인할 수 있습니다. <br/>
 <br/>
 <br/>
 
-| section2 : 한국소비자원 소개 및 새 소식                              |
-| :------------------------------------------------------------------------------------------------------------------------ |
+| **Section 3 : 공지사항 및 카드뉴스**                                                                                           |
+| :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b7271883-532a-4516-9fd8-e2b84171727d" width="500" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="500" alt="공지사항 및 카드뉴스"/>
 </div>
+- 공지사항, 보도자료, 카드뉴스 등을 제공하는 섹션으로, 다양한 소식을 한눈에 볼 수 있도록 **슬라이더** 기능을 활용했습니다. <br/>
+중요한 공지와 뉴스를 빠르게 전달할 수 있습니다.
+<br>
+<br>
 
-<br/>
-<br/>
-
-| section3 : 공지사항, 보도자료, 카드뉴스, 소비자시대 뉴스                                    |
-| :------------------------------------------------------------------------------------------------------------------------ |
+| **Section 4 : 소비자 상담 및 이벤트 배너**                                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/45a79577-7241-4898-903e-413c1b688a44" width="500" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="500" alt="소비자 상담 및 이벤트 배너"/>
 </div>
+- 소비자 상담 및 이벤트 관련 정보를 제공하는 섹션으로, 주요 서비스에 쉽게 접근할 수 있도록 배너와 링크가 배치되어 있습니다. <br/>
+**상담 버튼**과 **이벤트 배너**를 통해 사용자에게 편리한 경험을 제공합니다. <br/>
+<br>
+<br>
 
-<br/>
-<br/>
-
-| section4 : 소비자상담, 소통톡톡, 이벤트 카드뉴스, 배너                                    |
-| :------------------------------------------------------------------------------------------------------------------------ |
+| **Footer : 한국소비자원 푸터 및 사용자별 메뉴**                                                                                 |
+| :----------------------------------------------------------------------------------------------------------------------------- |
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/c55fe719-ee2d-4ffb-bdff-a58b98757b46" width="500" alt="핵심키워드"/>
+  <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="500" alt="푸터"/>
 </div>
+- 푸터 영역에서는 주요 사이트 링크와 사용자를 위한 정보가 제공됩니다. <br/>
+각 사용자는 사용자별 메뉴를 이용하여 자신에게 맞는 메뉴에 쉽게 접근할 수 있습니다. <br/>
 
-<br/>
-<br/>
-
-| footer : 한국소비자원 푸터, 사용자별 메뉴                                    |
-| :------------------------------------------------------------------------------------------------------------------------ |
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/e4e2d863-9f82-4421-9991-e2111b1c00ba" width="500" alt="핵심키워드"/>
-</div>
+<br>
+<br>
+<br>
 
 
-<br/>
-<br/>
+## 📝 링크
+
+| 이름                          | 링크                                                                                               |
+|-------------------------------|----------------------------------------------------------------------------------------------------|
+| 한국소비자원 본 홈페이지        | [한국소비자원 본 홈페이지 Link](https://www.kca.go.kr/home/main.do)                                |
+| 리뉴얼 홈페이지                | [리뉴얼 홈페이지 Link](https://yeonflower2na.github.io/test01/)                                   |
+| 피그마 디자인 파일             | [피그마 Link](https://www.figma.com/design/Zl2r28X9vZZIhVNa89r46O/공공기관-리뉴얼_정연희)          |

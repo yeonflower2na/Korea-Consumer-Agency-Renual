@@ -1,0 +1,26 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_436_1916" fill="white">
+<rect width="7.11111" height="7.11111" rx="1"/>
+</mask>
+<rect width="7.11111" height="7.11111" rx="1" stroke="white" stroke-width="3.6" mask="url(#path-1-inside-1_436_1916)"/>
+<rect width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-1-inside-1_436_1916)"/>
+<rect width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-1-inside-1_436_1916)"/>
+<mask id="path-2-inside-2_436_1916" fill="white">
+<rect y="8.88867" width="7.11111" height="7.11111" rx="1"/>
+</mask>
+<rect y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="white" stroke-width="3.6" mask="url(#path-2-inside-2_436_1916)"/>
+<rect y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-2-inside-2_436_1916)"/>
+<rect y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-2-inside-2_436_1916)"/>
+<mask id="path-3-inside-3_436_1916" fill="white">
+<rect x="8.88892" width="7.11111" height="7.11111" rx="1"/>
+</mask>
+<rect x="8.88892" width="7.11111" height="7.11111" rx="1" stroke="white" stroke-width="3.6" mask="url(#path-3-inside-3_436_1916)"/>
+<rect x="8.88892" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-3-inside-3_436_1916)"/>
+<rect x="8.88892" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-3-inside-3_436_1916)"/>
+<mask id="path-4-inside-4_436_1916" fill="white">
+<rect x="8.88892" y="8.88867" width="7.11111" height="7.11111" rx="1"/>
+</mask>
+<rect x="8.88892" y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="white" stroke-width="3.6" mask="url(#path-4-inside-4_436_1916)"/>
+<rect x="8.88892" y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-4-inside-4_436_1916)"/>
+<rect x="8.88892" y="8.88867" width="7.11111" height="7.11111" rx="1" stroke="black" stroke-opacity="0.2" stroke-width="3.6" mask="url(#path-4-inside-4_436_1916)"/>
+</svg>

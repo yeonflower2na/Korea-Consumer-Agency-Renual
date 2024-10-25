@@ -1,0 +1,214 @@
+/* root */
+:root{
+  --PrimaryColor: #4A81FC;
+  --SecondaryColor: #1C336A;
+  --PointColor: #ff5722;
+  --ContentColor: #F2F4F6;
+  --Pastelcolor1: #F9E8E5;
+  --Pastelcolor2: #F8E9DA;
+  --Pastelcolor3: #E9EBF4;
+  --Pastelcolor4: #DBEDF0;
+  --Pastelcolor5: #FFFAE8;
+  --GrayScale1: #121212;
+  --GrayScale2: #333333;
+  --GrayScale3: #929292;
+  --MenuColor: #73696B;
+}
+
+/* sitemap */
+.sitemap{
+  background-color: #fff;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  overflow: hidden;
+  touch-action: none;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sitemap.open {
+  max-height: 100%; 
+  opacity: 1;
+  overflow-y: auto;
+}
+.sitemap_header{
+  width: 1280px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.sitemap_logo{
+  flex: 1;
+}
+.sitemap_title{
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+hr{
+  border: 1px solid #62626240;
+}
+.sitemap_inner{
+  height: 100%;
+}
+.sitemap_inner p{
+  margin: 45px 0 20px 0;
+  color: #626262;
+}
+.sitemap_tap_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+}
+.sitemap_tap_menu button{
+  flex: 1;
+  height: 60px;
+}
+.sitemap_tap_menu button:hover{
+  background-color: #F0F5FE;
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+}
+.sitemap_tap_menu button > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sitemap_close{
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  cursor: pointer;
+}
+.close{
+  display: none;
+  max-height: 0;
+}
+.map-content{
+  width: 100%;
+  height: 100%;
+}
+.map-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.map-title{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: linear-gradient(to left, #F0F5FE, #fff);
+  margin: 45px 0 10px 0;
+  cursor: pointer;
+}
+.map-title > h5{
+  position: relative;
+  padding-left: 90px;
+}
+.map-title > h5::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+.map-list{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 55px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.map-list div{
+  width: 304px;
+  height: 60px;
+}
+.map-list > .map{
+  position: relative;
+}
+.map-list > .map:hover{
+  background-color: #f0f5fe96;
+  font-weight: 700;
+}
+.map-list > .map > i{
+  color: #bdbdbd;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+.map-title-01 > h5::before{
+  content: '';
+  position: absolute;
+  width: 55px;
+  background: url(../header/sitemapmenu1.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.map-title-02 > h5::before{
+  content: '';
+  position: absolute;
+  width: 75px;
+  background: url(../header/sitemapmenu2.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.map-title-03 > h5::before{
+  content: '';
+  position: absolute;
+  background: url(../header/sitemapmenu3.png) no-repeat 30% 50%;
+  background-size: cover;
+}
+.map-title-04 > h5::before{
+  content: '';
+  position: absolute;
+  width: 90px;
+  background: url(../header/sitemapmenu4.png) no-repeat 0 50%;
+  background-size: cover;
+  left: -10px;
+}
+.map-title-05 > h5::before{
+  content: '';
+  position: absolute;
+  background: url(../header/sitemapmenu5.png) no-repeat 50% 50%;
+  background-size: cover;
+  left: -5px;
+}
+.map-title-06 > h5::before{
+  content: '';
+  position: absolute;
+  background: url(../header/sitemapmenu6.png) no-repeat 80% 50%;
+  background-size: cover;
+  left: -5px;
+}
+.map-title-07 > h5::before{
+  content: '';
+  position: absolute;
+  background: url(../header/sitemapmenu7.png) no-repeat 80% 50%;
+  background-size: cover;
+  left: -5px;
+}
+.map-title-08 > h5::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  background: url(../header/sitemapmenu8.png) no-repeat 50% 50%;
+  background-size: cover;
+  left: -5px;
+}

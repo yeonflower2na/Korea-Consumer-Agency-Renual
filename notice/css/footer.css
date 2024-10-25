@@ -1,0 +1,345 @@
+/* root */
+:root{
+  --PrimaryColor: #4A81FC;
+  --SecondaryColor: #1C336A;
+  --PointColor: #ff5722;
+  --ContentColor: #F2F4F6;
+  --Pastelcolor1: #F9E8E5;
+  --Pastelcolor2: #F8E9DA;
+  --Pastelcolor3: #E9EBF4;
+  --Pastelcolor4: #DBEDF0;
+  --Pastelcolor5: #FFFAE8;
+  --GrayScale1: #121212;
+  --GrayScale2: #333333;
+  --GrayScale3: #929292;
+  --MenuColor: #73696B;
+}
+
+/* header */
+/* gnb_element */
+/* body가 부모태그 / snb, signature */
+/* section1 */
+/* body가 부모태그 / main_top */
+/* section2 */
+/* section3 */
+/* section4 */
+/* footer */
+footer{
+  width: 100%;
+  height: 235px;
+  position: absolute;
+  top: 1800px;
+}
+hr{
+  z-index: -1;
+}
+.footer_navi_inner{
+  height: 60px;
+}
+.footer_navi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.footer_navi > ul{}
+.footer_navi_right{}
+.clearfix{
+  display: flex;
+  gap: 30px;
+}
+.clearfix > li{
+  position: relative;
+}
+.clearfix .first > a{
+  color: var(--PrimaryColor);
+}
+.clearfix > li::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  margin-left: 15px;
+  background-color: #92929260;
+}
+.clearfix > li:last-child::after{
+  display: none;
+}
+.clearfix > li > a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.clearfix > li > a > i{
+  color: var(--PrimaryColor);
+}
+.footer_navi_right{
+  width: 360px;
+  height: 60px;
+  display: flex;
+}
+/* 
+  listbox 우선 사라지게 설정
+  클릭시 보이게 
+*/
+.family_site, .sitea_site{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+.familybtn, .siteabtn{
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  height: 60px;
+  padding: 0 20px;
+}
+.familybtn > i, .siteabtn > i{
+  color: var(--GrayScale2);
+  font-size: 12px;
+  margin-left: 10px;
+  transform: rotate(180deg);
+  transition: .3s ease;
+}
+.family_content, .sitea_content{
+  position: absolute;
+  background-color: #fff;
+  backdrop-filter: blur(2px);
+  overflow: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 180px;
+  left: 0;
+  bottom: 62px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(113, 113, 113, 0.367);
+  max-height: 0;
+  transition: max-height .3s ease-out;
+}
+.family_content > a,
+.sitea_content > a{
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 40px;
+}
+.family_site:hover .family_content,
+.sitea_site:hover .sitea_content{
+  display: block;
+}
+.family_content > a:hover,
+.sitea_content > a:hover{
+  background-color: #f2f4f6cd;
+  font-weight: 800;
+}
+/* custom scrollbar */
+.family_content::-webkit-scrollbar,
+.sitea_content::-webkit-scrollbar
+{width: 7px;}
+/* 스크롤바 넓이 조절 */
+.family_content::-webkit-scrollbar-thumb,
+.sitea_content::-webkit-scrollbar-thumb{
+    background: var(--SecondaryColor); /* 스크롤바 색상 */
+    border-radius: 5px; 
+    min-height: 20px;
+}
+.family_content::-webkit-scrollbar-track,
+.sitea_content::-webkit-scrollbar-track{
+    background: rgba(221, 221, 221, 0.592);  /*스크롤바 뒷 배경 색상*/
+    border-radius: 7px;
+}
+#arrow.rotate, #arrow2.rotate{transform: rotate(0);}
+
+/* footer_info */
+.footer_info_inner{
+  height: 180px;
+  position: relative;
+}
+.footer_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 113px;
+}
+.footer_info_left{
+  display: flex;
+  align-items: center;
+}
+.gray_logo{}
+.gray_logo > a{}
+.gray_logo > a > img{}
+.address{
+  margin-left: 52px;
+}
+.address_desc{
+  font-size: 12px;
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system;
+  font-weight: 500;
+  color:#676767;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+.address_desc .fir{
+  font-weight: 700;
+}
+.mark{
+  margin-right: 22px;
+}
+.mark > a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* footer_user_menu */
+.footer_user_menu{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  border-radius: 19px 19px 0 0;
+  background-color: var(--PrimaryColor);
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.137);
+  overflow: auto;
+}
+.user_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 413px;
+  background-color: var(--SecondaryColor);
+  border-radius: 19px 19px 0 0;
+}
+.user_title h6{
+  color: #fff;
+  position: relative;
+  width: 135px;
+  text-align: right;
+  margin-right: 40px;
+}
+.user_title h6::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../footer/usermenuicon.svg) no-repeat 50% 50%;
+  background-size: cover;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* 메뉴 탭 버튼 */
+.user_menu_tab{
+  display: flex;
+}
+.user_menu_tab button{
+  font-size: 13px;
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system;
+  font-weight: 500;
+  color: #fff;
+}
+.user_tab{
+  width: 62px;
+  background: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.user_tab.active{
+  width: 62px;
+  height: 22px;
+  border-radius: 50px;
+  border: 1.5px solid #A1A1A1;
+}
+.user_tab:hover{
+  text-decoration: underline;
+}
+/* 메뉴 콘텐츠 */
+.user_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 867px;
+}
+.user_content_wrap{
+  width: 790px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_menu_list{
+  display: none;
+}
+.user_menu_list.active{
+  display: block;
+}
+/* swiper-slide */
+.user_menu_list > .swiper-container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.user_menu_list > .swiper-container > .swiper-wrapper{
+  width: 700px;
+  align-items: center;
+}
+.user_menu_list > .swiper-container > .swiper-wrapper > .swiper-slide{
+  width: auto; /* 각 슬라이드의 너비가 자동으로 설정되도록 함 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system;
+  font-weight: 400;
+  position: relative;
+  padding-left: 8px;
+} 
+.user_menu_list > .swiper-container > .swiper-wrapper > .swiper-slide::before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* a 태그를 블록으로 만들고 줄바꿈 설정 */
+.user_menu_list > .swiper-container > .swiper-wrapper > .swiper-slide > a{
+  display: block;
+  white-space: nowrap; /* 줄바꿈 안함 */
+  color: #fff;
+}
+.user_menu_list > .swiper-container > .swiper-wrapper > .swiper-slide > a:-webkit-any-link:hover{
+  text-decoration: underline;
+}
+/* 메뉴콘텐츠컨트롤 -> 버튼 */
+.user_menu_controls{
+  width: 35px;
+  height: 15px;
+  position: relative;
+}
+.user_menu_controls > button{
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  background: none;
+  cursor: pointer;
+}
+.user_menu_controls > button > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user_menu_prev{
+  left: 0;
+}
+.user_menu_next{
+  right: 0;
+}

@@ -1,0 +1,312 @@
+/* root */
+:root{
+  --PrimaryColor: #4A81FC;
+  --SecondaryColor: #1C336A;
+  --PointColor: #ff5722;
+  --ContentColor: #F2F4F6;
+  --Pastelcolor1: #F9E8E5;
+  --Pastelcolor2: #F8E9DA;
+  --Pastelcolor3: #E9EBF4;
+  --Pastelcolor4: #DBEDF0;
+  --Pastelcolor5: #FFFAE8;
+  --GrayScale1: #121212;
+  --GrayScale2: #333333;
+  --GrayScale3: #929292;
+  --MenuColor: #73696B;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 150px;
+  padding-top: 20px;
+  position: relative;
+}
+.mobile_header, .mobile_nav, .mobile_kca_desc, .mobile_sec2_items, .mobile_main_content, .mobile_section3_news, .mobile_notice_control, .mobile_sitemap,  .mobile_consumerbtn, .mobile_footer_logo, .mobile_sitemap_tap, .mobile_login{
+  display: none;
+}
+/* gnb_element */
+.gnb_element{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo_area{
+  width: 175px;
+  height: 60px;
+}
+.logo_area > img{
+  z-index: -1;
+}
+.top_right_menu{
+  z-index: 1000;
+}
+.top_right_menu>ul{
+  display: flex;
+  align-items: center;
+}
+.top_right_menu > ul > li, #darkimg{
+  position: relative;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system;
+  font-weight: 600;
+}
+/* select */
+select{
+  -webkit-appearance:none; /* for chrome */
+  -moz-appearance:none; /*for firefox*/
+  appearance:none;
+  box-sizing: border-box; /* select 박스의 크기 방식 지정 */
+  background:transparent;/* 배경색 투명 처리 */
+  font-family: "Pretendard GOV Variable", "Pretendard GOV", -apple-system;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+select::-ms-expand{
+  display: none;/*for IE10,11*/
+}
+.select_wrap {
+  width: 55px;
+  height: 20px;
+  background:url('../header/arrow.svg') no-repeat 97% 50%/15px auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+option{
+  border: 1px solid rgb(253, 0, 0);
+  padding: 5px 10px;
+}
+/* nav */
+#gnb{
+  width: 1280px;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+#gnb > ul{
+  width: 925px;
+  height: 64px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gnb > ul > li{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+#gnb > ul > li:nth-child(4){
+  flex: 1.2;
+}
+#gnb > ul > li:nth-child(5){
+  flex: 1.5;
+}
+#gnb > ul > li > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-decoration: none;
+}
+.gnb_item{
+  position: relative;
+}
+.gnb_item::after{
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 0;
+  right: 0;
+  background: url(../header/sig.svg) no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0; /* 안보이게 설정 */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.gnb_item:hover .gnb_item::after{
+  opacity: 1;
+}
+.gnb_item:hover{
+  border-bottom: 4px solid var(--PointColor);
+}
+.gnb_item:hover::after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+#gnb > ul > .sitemap_btn{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: none;
+}
+/* 펼쳐지는 메뉴 */
+.gnb_wrap{
+  z-index: 100;
+  width: 100%;
+  position: relative
+}
+.gnb_submenu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block; /* display를 block으로 유지하고, 높이 조절로 감춤 */
+  max-height: 0; /* 처음에 감춰진 상태로 설정 */
+  width: 100%;
+  box-shadow: 0 10px 10px #00000025;
+  border-top: 2px solid #62626240;
+  border-radius: 0 0 50px 50px;
+  overflow: hidden; /* 내용이 넘치지 않도록 설정 */
+  transition: max-height 0.2s ease;
+  transform: translateY(-600px);
+  opacity: 0;
+}
+.gnb_submenu.open {
+  max-height: 600px;
+  transform: translateY(0);
+  opacity: 1;
+}
+.gnb_content{
+  display: flex;
+  background-color: #fff;
+}
+.content_left{
+  width: 25%;
+  height: 534px;
+  border-radius: 0 50px 0 50px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+.content_tit{
+  width: 225px;
+  height: 330px;
+  margin-top: 60px;
+  margin-left: 35%;
+}
+.content_left img{
+  width: 206px;
+  height: 206px;
+}
+.content_left h3{
+  margin-top: 25px;
+}
+.content_left p{
+  margin-top: 18px;
+  line-height: 1.2;
+}
+.content_left::before{
+  content: '';
+  position: absolute;
+  width: 324px;
+  height: 324px;
+  background: url(../body/signature-red2.svg);
+  left: 0;
+  bottom: -36px;
+  animation: sigRed 20s 1s forwards infinite alternate;
+}
+.content1{
+  background: #F6F1F1;
+}
+.content2{
+  background: #F8E9DA;
+}
+.content4{
+  background: #E9EBF4;
+}
+.content5{
+  background: #DBEDF0;
+}
+.content_middle{
+  width: 22%;
+  margin-left: -100px;
+  padding-left: 100px;
+  background-color: var(--MenuColor);
+}
+.content_middle ul{
+  width: 100%;
+  height: 100%;
+}
+.content_middle ul li{
+  width: 100%;
+  height: 67px;
+  border-bottom: 1px solid #ffffff8c;
+}
+.content_middle ul li:hover{
+  background-color: #ffffff1f;
+  text-decoration: none;
+  font-weight: 800;
+}
+.content_middle ul li a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  line-height: 67px;
+  padding-left: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.content_right{
+  width: 53%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 60px 100px 60px;
+  background-color: #fff;
+}
+.content_right_menu{
+  width: 312px;
+  height: 125px;
+  margin-right: 60px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.content_right_menu h6{
+  position: relative;
+  width: 312px;
+  height: 40px;
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.content_right_menu:hover h6{
+  font-weight: 900;
+}
+.content_right_menu h6::after{
+  content: '';
+  position: absolute;
+  width: 312px;
+  height: 1px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 0;
+}
+.content_right_menu p {
+  width: 312px;
+  height: 80px;
+  padding-top: 12px;
+  line-height: 1.2;
+}
+
+
+/* body가 부모태그 / snb, signature */
+/* section1 */
+/* body가 부모태그 / main_top */
+/* section2 */
+/* section3 */
+/* section4 */
+/* footer */

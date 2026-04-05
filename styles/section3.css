@@ -26,6 +26,7 @@
   top: 2160px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3000;
 }
 .sec3_wrap{
   width: 100%;
@@ -33,17 +34,23 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+  position: relative;
+  z-index: 3000;
 }
 .sec3_top_inner{
   height: 520px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+  z-index: 3000;
 }
 /* sec3_notice */
 .sec3_notice{
   width: 845px;
   height: 400px;
+  position: relative;
+  z-index: 3001;
 }
 .notice_title{
   margin-top: 28px;
@@ -51,10 +58,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 3002;
 }
 .notice_left_menu{
   width: 272px;
   height: 48px;
+  position: relative;
+  z-index: 3003;
 }
 .notice_tab{
   width: 130px;
@@ -65,6 +76,9 @@
   color:#121212;
   background: none;
   cursor: pointer;
+  position: relative;
+  z-index: 3004;
+  pointer-events: auto;
 }
 .notice_tab.active{
   border-bottom: 4px solid var(--PointColor);
@@ -72,10 +86,16 @@
 /* controls */
 .notice_controls{
   width: 166px;
+  position: relative;
+  z-index: 3003;
+  pointer-events: auto;
 }
 .notice_controls button{
   background: none;
   cursor: pointer;
+  position: relative;
+  z-index: 3004;
+  pointer-events: auto;
 }
 .notice_next{
   margin-right: 30px;
@@ -84,6 +104,8 @@
 /* swiper */
 .notice_content{
   margin-top: 28px;
+  position: relative;
+  z-index: 3001;
 }
 .notice_content_wrap{
   width: 845px;

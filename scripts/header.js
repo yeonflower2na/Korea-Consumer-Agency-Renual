@@ -64,6 +64,22 @@ function updateSharedNavigationLinks() {
       slides[5].setAttribute('href', noticeLink);
     }
   });
+
+  document.querySelectorAll('.gnb_item').forEach(function(item) {
+    const link = item.querySelector('a');
+
+    if (!link) {
+      return;
+    }
+
+    if (item.dataset.menu === 'menu02') {
+      link.setAttribute('href', subpageLink);
+    }
+
+    if (item.dataset.menu === 'menu05') {
+      link.setAttribute('href', noticeLink);
+    }
+  });
 }
 
 function renderGnbMenu() {

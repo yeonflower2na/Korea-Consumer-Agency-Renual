@@ -1,12 +1,15 @@
-﻿const assetBase = document.body.dataset.assetBase || 'assets/images';
+const section3AssetBase = document.body.dataset.assetBase || 'assets/images';
 
 function section3Asset(file) {
-  return `${assetBase}/${file}`;
+  return `${section3AssetBase}/${file}`;
 }
 
 // 怨듭??ы빆
 let noticeButton = document.querySelectorAll(".notice_tab");
 let noticeContent = document.querySelectorAll(".notice_menu_list");
+const noticePrevButton = document.querySelector(".notice_prev");
+const noticeNextButton = document.querySelector(".notice_next");
+const noticeStopButton = document.querySelector(".notice_stop");
 
 noticeButton.forEach(function(noticeBtn){
   noticeBtn.addEventListener('click', function(){
@@ -26,11 +29,7 @@ var noticeswiper1 = new Swiper(".notice-swiper-target-1", {
   slidesPerView: 4,
   spaceBetween: 0,
   mousewheel: true,
-  loop : true,혻 
-  navigation: {
-    nextEl: ".notice_next",
-    prevEl: ".notice_prev",
-  },
+  loop: true,
   autoplay: {
     delay: 6000,
     disableOnInteraction: false,
@@ -42,26 +41,52 @@ var noticeswiper2 = new Swiper(".notice-swiper-target-2", {
   slidesPerView: 4,
   spaceBetween: 0,
   mousewheel: true,
-  loop : true,혻 
-  navigation: {
-    nextEl: ".notice_next",
-    prevEl: ".notice_prev",
-  },
+  loop: true,
   autoplay: {
     delay: 6000,
     disableOnInteraction: false,
   },
   slidesPerGroup: 1,
 });
-document.querySelector('.notice_stop').addEventListener('click', function(){
-  noticeswiper1.autoplay.stop();
-  noticeswiper2.autoplay.stop();
-});
 
-document.querySelector('.notice_stop').addEventListener('click', function(){
-  noticeswiper1.autoplay.stop();
-  noticeswiper2.autoplay.stop();
-});
+function getActiveNoticeSwiper() {
+  const activeNoticeMenu = document.querySelector(".notice_menu_list.active");
+  if (!activeNoticeMenu) {
+    return noticeswiper1;
+  }
+
+  return activeNoticeMenu.id === "target-2" ? noticeswiper2 : noticeswiper1;
+}
+
+if (noticePrevButton) {
+  noticePrevButton.addEventListener("click", function () {
+    getActiveNoticeSwiper().slidePrev();
+  });
+}
+
+if (noticeNextButton) {
+  noticeNextButton.addEventListener("click", function () {
+    getActiveNoticeSwiper().slideNext();
+  });
+}
+
+if (noticeStopButton) {
+  noticeStopButton.addEventListener("click", function () {
+    const activeNoticeSwiper = getActiveNoticeSwiper();
+    const isRunning = activeNoticeSwiper.autoplay && activeNoticeSwiper.autoplay.running;
+
+    if (isRunning) {
+      noticeswiper1.autoplay.stop();
+      noticeswiper2.autoplay.stop();
+      noticeStopButton.setAttribute("aria-pressed", "true");
+      return;
+    }
+
+    noticeswiper1.autoplay.start();
+    noticeswiper2.autoplay.start();
+    noticeStopButton.setAttribute("aria-pressed", "false");
+  });
+}
 
 // 諛섏쓳??湲곕뒫 硫덉땄 ?ㅼ젙
 function updateSwiperSettings() {
@@ -186,4 +211,3 @@ function revertAllImages() {
     }
   });
 }
-

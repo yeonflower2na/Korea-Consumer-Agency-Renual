@@ -18,10 +18,10 @@
 /* notice */
 .noticesite{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .noticesite_inner{
-  height: 100%;
+  height: auto;
 }
 .category{
   margin-top: 35px;
@@ -51,7 +51,7 @@
   justify-content: space-between;
   align-items: start;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .noticesiteIn{
   width: 275px;
@@ -375,12 +375,15 @@ tbody tr.fixed:nth-child(2) .fixednew::before{
 }
 .survey_question{
   position: relative;
+  min-height: 215px;
+  align-items: flex-start;
+  padding-top: 32px;
 }
 .survey_ask{
   height: 180px;
   position: absolute;
   left: 120px;
-  top: 32px;
+  top: 0;
 }
 .hangeul, .acrobat, .survey_satisfied{
   display: flex;
@@ -495,6 +498,12 @@ tbody tr.fixed:nth-child(2) .fixednew::before{
   background-color: #57595C;
   color: #fff;
   font-weight: 400;
+}
+
+.notice_page footer{
+  position: static;
+  top: auto;
+  margin-top: 0;
 }
 
 

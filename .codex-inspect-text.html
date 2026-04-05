@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<body>
+<pre id="out" style="font-size:24px;line-height:1.5;white-space:pre-wrap;width:1800px"></pre>
+<iframe id="frame" src="file:///D:/%23yeonhui/korea-consumer/Korea-Consumer-Agency-Renual/index.html" style="width:1440px;height:2200px;border:0;opacity:0;pointer-events:none;position:absolute;left:-9999px;top:-9999px"></iframe>
+<script>
+const out = document.getElementById('out');
+const frame = document.getElementById('frame');
+frame.addEventListener('load', () => {
+  setTimeout(() => {
+    try {
+      const doc = frame.contentDocument;
+      const win = frame.contentWindow;
+      const selectors = ['.notice_tab', '.notice_controls', '.notice_content_wrap', '.sec3_cardNews', '.sec3_consumer'];
+      const result = selectors.map((selector) => {
+        const el = doc.querySelector(selector);
+        if (!el) return { selector, found: false };
+        const rect = el.getBoundingClientRect();
+        const x = rect.left + rect.width / 2;
+        const y = rect.top + Math.min(rect.height / 2, 20);
+        const topEl = doc.elementFromPoint(x, y);
+        return {
+          selector,
+          topElement: topEl ? { tag: topEl.tagName, className: topEl.className, id: topEl.id } : null,
+          same: !!topEl && (topEl === el || el.contains(topEl)),
+          section3Z: win.getComputedStyle(doc.querySelector('#section3')).zIndex,
+          sitemapPointer: win.getComputedStyle(doc.querySelector('.sitemap')).pointerEvents,
+          sitemapOpacity: win.getComputedStyle(doc.querySelector('.sitemap')).opacity
+        };
+      });
+      out.textContent = JSON.stringify(result, null, 2);
+    } catch (e) {
+      out.textContent = 'ERROR: ' + e.message;
+    }
+  }, 1500);
+});
+</script>
+</body>
+</html>

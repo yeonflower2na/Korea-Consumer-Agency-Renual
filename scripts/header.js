@@ -1,3 +1,21 @@
+const isSubPage = window.location.pathname.includes('/pages/');
+
+function routePath(routeName) {
+  const routes = isSubPage
+    ? {
+        home: '../index.html',
+        subpage: 'subpage.html',
+        notice: 'notice.html',
+      }
+    : {
+        home: 'index.html',
+        subpage: 'pages/subpage.html',
+        notice: 'pages/notice.html',
+      };
+
+  return routes[routeName] || '#none';
+}
+
 const gnbMenuItems = [
   {
     label: '\uC18C\uBE44\uC790 \uC548\uC804',
@@ -6,7 +24,7 @@ const gnbMenuItems = [
   },
   {
     label: '\uD53C\uD574 \uAD6C\uC81C',
-    href: 'pages/subpage.html',
+    href: routePath('subpage'),
     menuId: 'menu02',
   },
   {
@@ -21,10 +39,32 @@ const gnbMenuItems = [
   },
   {
     label: '\uC18C\uBE44\uC790 \uB274\uC2A4 \uBC0F \uC815\uBCF4',
-    href: 'pages/notice.html',
+    href: routePath('notice'),
     menuId: 'menu05',
   },
 ];
+
+function updateSharedNavigationLinks() {
+  const homeLink = routePath('home');
+  const subpageLink = routePath('subpage');
+  const noticeLink = routePath('notice');
+
+  document.querySelectorAll('.sitemap_logo a, .logo_area a, .logo_sig a').forEach(function(link) {
+    link.setAttribute('href', homeLink);
+  });
+
+  document.querySelectorAll('.mobile_menu').forEach(function(menu) {
+    const slides = menu.querySelectorAll('.swiper-slide a');
+
+    if (slides[1]) {
+      slides[1].setAttribute('href', subpageLink);
+    }
+
+    if (slides[5]) {
+      slides[5].setAttribute('href', noticeLink);
+    }
+  });
+}
 
 function renderGnbMenu() {
   const gnbList = document.querySelector('#gnb > ul');
@@ -48,6 +88,7 @@ function renderGnbMenu() {
 }
 
 renderGnbMenu();
+updateSharedNavigationLinks();
 
 const gnbNav = document.getElementById('gnb');
 const gnbWrap = document.querySelector('.gnb_wrap');

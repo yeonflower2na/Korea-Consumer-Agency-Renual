@@ -258,8 +258,10 @@ body{
 }
 /* search_box */
 .search_box{
-  margin: 35px auto;
+  width: 720px;
+  margin: 35px auto 0;
   text-align: center;
+  position: relative;
 }
 .search_box form{}
 .search_box form label{
@@ -295,13 +297,14 @@ body{
   background: url(../assets/images/search.svg) no-repeat;
 }
 .search_box_popup{
-  position: absolute;
+  position: relative;
   width: 720px;
   height: 320px;
   border-radius: 19px;
-  left: 50.5%;
-  transform: translateX(-50%);
-  z-index: 100;
+  margin: 8px auto 0;
+  left: auto;
+  transform: none;
+  z-index: 300;
   background-color: #fff;
   /* 안보이게 설정 */
   max-height: 0;

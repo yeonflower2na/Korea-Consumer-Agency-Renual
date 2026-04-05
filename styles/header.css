@@ -21,6 +21,7 @@ header{
   height: 150px;
   padding-top: 20px;
   position: relative;
+  z-index: 10000;
 }
 .mobile_header, .mobile_nav, .mobile_kca_desc, .mobile_sec2_items, .mobile_main_content, .mobile_section3_news, .mobile_notice_control, .mobile_sitemap,  .mobile_consumerbtn, .mobile_footer_logo, .mobile_sitemap_tap, .mobile_login{
   display: none;
@@ -32,7 +33,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 10001;
 }
 .logo_area{
   width: 175px;
@@ -42,7 +43,7 @@ header{
   z-index: -1;
 }
 .top_right_menu{
-  z-index: 1000;
+  z-index: 10001;
 }
 .top_right_menu>ul{
   display: flex;
@@ -91,7 +92,7 @@ select > option{}
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  z-index: 1000;
+  z-index: 10002;
 }
 #gnb > ul{
   width: 925px;
@@ -154,7 +155,7 @@ select > option{}
 }
 /* 펼쳐지는 메뉴 */
 .gnb_wrap{
-  z-index: 100;
+  z-index: 10003;
   width: 100%;
   position: relative
 }
@@ -172,6 +173,7 @@ select > option{}
   transition: max-height 0.2s ease;
   transform: translateY(-600px);
   opacity: 0;
+  z-index: 10004;
 }
 .gnb_submenu.open {
   max-height: 600px;
@@ -181,6 +183,8 @@ select > option{}
 .gnb_content{
   display: flex;
   background-color: #fff;
+  position: relative;
+  z-index: 10005;
 }
 .content_left{
   width: 25%;

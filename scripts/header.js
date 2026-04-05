@@ -1,47 +1,130 @@
-﻿// main-menu의 li 모두 선택
-let gnbItems = document.querySelectorAll('.gnb_item');
-// sub-menu 선택
-let gnbSubMenus = document.querySelectorAll('.gnb_submenu');
+const gnbMenuItems = [
+  {
+    label: '\uC18C\uBE44\uC790 \uC548\uC804',
+    href: '#none',
+    menuId: 'menu01',
+  },
+  {
+    label: '\uD53C\uD574 \uAD6C\uC81C',
+    href: 'pages/subpage.html',
+    menuId: 'menu02',
+  },
+  {
+    label: '\uBD84\uC7C1 \uC870\uC815',
+    href: '#none',
+    menuId: 'menu03',
+  },
+  {
+    label: '\uC2A4\uB9C8\uD2B8 \uCEE8\uC288\uBA38',
+    href: '#none',
+    menuId: 'menu04',
+  },
+  {
+    label: '\uC18C\uBE44\uC790 \uB274\uC2A4 \uBC0F \uC815\uBCF4',
+    href: 'pages/notice.html',
+    menuId: 'menu05',
+  },
+];
 
-let closeTimeout; // 서브메뉴 닫기 타이머
+function renderGnbMenu() {
+  const gnbList = document.querySelector('#gnb > ul');
+  const sitemapButton = gnbList?.querySelector('.sitemap_btn');
 
-// 서브메뉴 열기 함수
+  if (!gnbList || !sitemapButton || gnbList.querySelector('.gnb_item')) {
+    return;
+  }
+
+  const menuMarkup = gnbMenuItems.map(function(item) {
+    return `
+      <li class="gnb_item" data-menu="${item.menuId}">
+        <a href="${item.href}">
+          <h5>${item.label}</h5>
+        </a>
+      </li>
+    `;
+  }).join('');
+
+  sitemapButton.insertAdjacentHTML('beforebegin', menuMarkup);
+}
+
+renderGnbMenu();
+
+const gnbNav = document.getElementById('gnb');
+const gnbWrap = document.querySelector('.gnb_wrap');
+const gnbItems = document.querySelectorAll('.gnb_item');
+const gnbSubMenus = document.querySelectorAll('.gnb_submenu');
+
+let closeTimeout;
+
+function clearCloseTimer() {
+  clearTimeout(closeTimeout);
+}
+
 function openSubmenu(menu) {
-  clearTimeout(closeTimeout); // 서브메뉴 닫기 타이머 취소
+  clearCloseTimer();
+
   gnbSubMenus.forEach(function(submenu) {
-    submenu.classList.remove('open'); // 다른 서브메뉴 닫기
+    submenu.classList.remove('open');
   });
+
   if (menu) {
-    menu.classList.add('open'); // 해당 서브메뉴 열기
+    menu.classList.add('open');
   }
 }
 
-// 서브메뉴 닫기 함수
 function closeSubmenu() {
+  clearCloseTimer();
   closeTimeout = setTimeout(function() {
     gnbSubMenus.forEach(function(submenu) {
-      submenu.classList.remove('open'); // 서브메뉴 닫기
+      submenu.classList.remove('open');
     });
-  }, 300); // 3초 후 서브메뉴 닫기
+  }, 150);
 }
 
-// 각 gnbItem에 마우스오버 시 서브메뉴 열기
-gnbItems.forEach(function(gnbitem) {
-  gnbitem.addEventListener('mouseenter', function() {
-    let menu = document.getElementById(gnbitem.dataset.menu);
-    openSubmenu(menu); // 서브메뉴 열기
+function isInsideHeaderMenu(target) {
+  if (!target) {
+    return false;
+  }
+
+  return Boolean(target.closest('#gnb, .gnb_wrap'));
+}
+
+gnbItems.forEach(function(gnbItem) {
+  gnbItem.addEventListener('mouseenter', function() {
+    const targetMenu = document.getElementById(gnbItem.dataset.menu);
+    openSubmenu(targetMenu);
+  });
+
+  gnbItem.addEventListener('mouseleave', function(event) {
+    if (!isInsideHeaderMenu(event.relatedTarget)) {
+      closeSubmenu();
+    }
   });
 });
 
-// 서브메뉴에서 마우스가 나가면 서브메뉴 닫기
 gnbSubMenus.forEach(function(submenu) {
-  submenu.addEventListener('mouseleave', function() {
-    closeSubmenu(); // 서브메뉴 닫기 타이머 실행
+  submenu.addEventListener('mouseenter', function() {
+    clearCloseTimer();
+    openSubmenu(submenu);
   });
 
-  submenu.addEventListener('mouseenter', function() {
-    clearTimeout(closeTimeout); // 서브메뉴 위에 마우스가 있으면 닫기 취소
+  submenu.addEventListener('mouseleave', function() {
+    closeSubmenu();
   });
 });
 
+if (gnbNav) {
+  gnbNav.addEventListener('mouseleave', function(event) {
+    if (!isInsideHeaderMenu(event.relatedTarget)) {
+      closeSubmenu();
+    }
+  });
+}
 
+if (gnbWrap) {
+  gnbWrap.addEventListener('mouseleave', function(event) {
+    if (!isInsideHeaderMenu(event.relatedTarget)) {
+      closeSubmenu();
+    }
+  });
+}

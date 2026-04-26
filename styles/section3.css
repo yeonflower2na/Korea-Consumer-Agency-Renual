@@ -252,8 +252,9 @@
 }
 /* swiper */
 .consumerBox{
-  width: 1280px;
+  width: 1210px;
   height: 450px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
@@ -290,22 +291,22 @@
   transition:  transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 /* active 이미지 */
-.consumerBoxIn > .swiper-slide-active{
+.consumerBoxIn > .consumer-visual-active{
   transform: perspective(1000px) translateZ(100px) rotateY(0deg); 
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), margin 0.6s ease; 
 }
-.consumerBoxIn > .swiper-slide:not(.swiper-slide-active) {
+.consumerBoxIn > .swiper-slide:not(.consumer-visual-active) {
   transform: perspective(1000px) translateZ(0) rotateY(-15deg); 
 }
-.consumerBoxIn > .swiper-slide-active > img{
+.consumerBoxIn > .consumer-visual-active > img{
   width: auto;
   height: auto;
 }
-.consumerBoxIn > .swiper-slide-active > p{
+.consumerBoxIn > .consumer-visual-active > p{
   top: 73%;
   font-weight: 800;
 }
-.consumerBoxIn > .swiper-slide-active::before{
+.consumerBoxIn > .consumer-visual-active::before{
   content: '';
   position: absolute;
   top: 70%;
@@ -319,7 +320,7 @@
   z-index: 100;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.consumerBoxIn > .swiper-slide-active::after{
+.consumerBoxIn > .consumer-visual-active::after{
   content: '';
   position: absolute;
   width: 468px;

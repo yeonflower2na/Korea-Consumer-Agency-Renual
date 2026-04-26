@@ -129,85 +129,102 @@ var consumerswiper = new Swiper('.consumerBox', {
   slidesPerView: 5,
   spaceBetween: 15,
   loop: true,
-  centeredSlides: true,
+  loopedSlides: 7,
+  centeredSlides: false,
+  roundLengths: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".consumer-next", // ?ㅼ쓬 ?щ씪?대뱶濡??대룞?섎뒗 踰꾪듉???대옒?ㅻ챸
     prevEl: ".consumer-prev", // ?댁쟾 ?щ씪?대뱶濡??대룞?섎뒗 踰꾪듉???대옒?ㅻ챸
   },
   slidesPerGroup: 1,
-  initialSlide: 0,
+  initialSlide: 5,
   slideToClickedSlide: true,
   on: {
     init: function() { 
+      updateConsumerCenterSlide();
       changeImageUrl();
-      adjustCenterSlide();
     },
     slideChangeTransitionEnd: function () {
+      updateConsumerCenterSlide();
       changeImageUrl(); 
-      adjustCenterSlide();
     },
     slideChangeTransitionStart: function () {
       revertAllImages();
-      adjustCenterSlide();
     }
   }
 });
 
-function adjustCenterSlide() {
+function updateConsumerCenterSlide() {
+  const consumerBox = document.querySelector('.consumerBox');
   const slides = document.querySelectorAll('.consumerBoxIn .swiper-slide');
+  const boxRect = consumerBox ? consumerBox.getBoundingClientRect() : null;
+  let centerSlide = document.querySelector('.consumerBox .swiper-slide-active');
+
+  if (boxRect) {
+    const boxCenterX = boxRect.left + (boxRect.width / 2);
+    const visibleSlides = Array.from(slides)
+      .filter(function (slide) {
+        const rect = slide.getBoundingClientRect();
+        return rect.right > boxRect.left && rect.left < boxRect.right;
+      })
+      .map(function (slide) {
+        const rect = slide.getBoundingClientRect();
+        const slideCenterX = rect.left + (rect.width / 2);
+        return {
+          slide: slide,
+          distance: Math.abs(slideCenterX - boxCenterX),
+        };
+      });
+    
+    if (visibleSlides.length > 0) {
+      visibleSlides.sort(function (a, b) {
+        return a.distance - b.distance;
+      });
+      centerSlide = visibleSlides[0].slide;
+    }
+  }
+
   slides.forEach(function (slide) {
-    if (slide.classList.contains('swiper-slide-active')) {
+    slide.classList.remove('consumer-visual-active');
+
+    if (slide === centerSlide) {
+      slide.classList.add('consumer-visual-active');
       slide.style.zIndex = '999';
-      slide.style.transform = 'scale(1.1)';
-      slide.style.transition = 'transform 0.6s ease, z-index 0.6s ease'; 
     } else {
-      slide.style.zIndex = '1'; 
-      slide.style.transform = 'scale(1)'; 
-      slide.style.transition = 'transform 0.6s ease, z-index 0.6s ease'; 
+      slide.style.zIndex = '1';
     }
   });
 }
 
+function getConsumerImageName(src) {
+  const match = src.match(/consumerNews(\d+)(-1)?\.png$/);
+  if (!match) {
+    return null;
+  }
+
+  return {
+    index: match[1],
+    isDefault: match[2] === '-1',
+  };
+}
+
 function changeImageUrl() {
-  const activeSlide = document.querySelector('.swiper-slide-active .consumerimg');
+  const activeSlide = document.querySelector('.consumerBox .consumer-visual-active .consumerimg');
   if (activeSlide) {
-    const originalSrc = activeSlide.src;
-    if (originalSrc.includes('section3/consumerNews1-1.png')) {
-      activeSlide.src = section3Asset('consumerNews1.png');
-    } else if (originalSrc.includes('section3/consumerNews2-1.png')) {
-      activeSlide.src = section3Asset('consumerNews2.png');
-    } else if (originalSrc.includes('section3/consumerNews3-1.png')) {
-      activeSlide.src = section3Asset('consumerNews3.png');
-    } else if (originalSrc.includes('section3/consumerNews4-1.png')) {
-      activeSlide.src = section3Asset('consumerNews4.png');
-    } else if (originalSrc.includes('section3/consumerNews5-1.png')) {
-      activeSlide.src = section3Asset('consumerNews5.png');
-    } else if (originalSrc.includes('section3/consumerNews6-1.png')) {
-      activeSlide.src = section3Asset('consumerNews6.png');
-    } else if (originalSrc.includes('section3/consumerNews7-1.png')) {
-      activeSlide.src = section3Asset('consumerNews7.png');
+    const imageName = getConsumerImageName(activeSlide.src);
+    if (imageName && imageName.isDefault) {
+      activeSlide.src = section3Asset(`consumerNews${imageName.index}.png`);
     }
   }
 }
 
 function revertAllImages() {
-  const slides = document.querySelectorAll('.swiper-slide .consumerimg');
+  const slides = document.querySelectorAll('.consumerBox .swiper-slide .consumerimg');
   slides.forEach(function(img) {
-    const currentSrc = img.src;
-    if (currentSrc.includes('section3/consumerNews1.png')) {
-      img.src = section3Asset('consumerNews1-1.png');
-    } else if (currentSrc.includes('section3/consumerNews2.png')) {
-      img.src = section3Asset('consumerNews2-1.png');
-    } else if (currentSrc.includes('section3/consumerNews3.png')) {
-      img.src = section3Asset('consumerNews3-1.png');
-    } else if (currentSrc.includes('section3/consumerNews4.png')) {
-      img.src = section3Asset('consumerNews4-1.png');
-    } else if (currentSrc.includes('section3/consumerNews5.png')) {
-      img.src = section3Asset('consumerNews5-1.png');
-    } else if (currentSrc.includes('section3/consumerNews6.png')) {
-      img.src = section3Asset('consumerNews6-1.png');
-    } else if (currentSrc.includes('section3/consumerNews7.png')) {
-      img.src = section3Asset('consumerNews7-1.png');
+    const imageName = getConsumerImageName(img.src);
+    if (imageName && !imageName.isDefault) {
+      img.src = section3Asset(`consumerNews${imageName.index}-1.png`);
     }
   });
 }
